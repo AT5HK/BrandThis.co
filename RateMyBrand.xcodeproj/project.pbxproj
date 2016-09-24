@@ -10,8 +10,12 @@
 		1210E7C81D9642A50053BFC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210E7C71D9642A50053BFC2 /* AppDelegate.swift */; };
 		1210E7CA1D9642A50053BFC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210E7C91D9642A50053BFC2 /* ViewController.swift */; };
 		1210E7CD1D9642A50053BFC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1210E7CB1D9642A50053BFC2 /* Main.storyboard */; };
-		1210E7CF1D9642A50053BFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1210E7CE1D9642A50053BFC2 /* Assets.xcassets */; };
 		1210E7D21D9642A50053BFC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1210E7D01D9642A50053BFC2 /* LaunchScreen.storyboard */; };
+		1210E7DC1D96436E0053BFC2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1210E7DB1D96436E0053BFC2 /* Podfile */; };
+		1210E7DE1D96484A0053BFC2 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1210E7DD1D96484A0053BFC2 /* OverlayView.xib */; };
+		1210E7E01D964CA60053BFC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1210E7DF1D964CA60053BFC2 /* Images.xcassets */; };
+		1210E7E21D9715490053BFC2 /* ExampleOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210E7E11D9715490053BFC2 /* ExampleOverlayView.swift */; };
+		3C82BA502621DADBE0378C67 /* Pods_RateMyBrand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B66C27D4E4BC19F30F4EB9C /* Pods_RateMyBrand.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +23,15 @@
 		1210E7C71D9642A50053BFC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1210E7C91D9642A50053BFC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1210E7CC1D9642A50053BFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1210E7CE1D9642A50053BFC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1210E7D11D9642A50053BFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1210E7D31D9642A50053BFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1210E7DB1D96436E0053BFC2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		1210E7DD1D96484A0053BFC2 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		1210E7DF1D964CA60053BFC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1210E7E11D9715490053BFC2 /* ExampleOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleOverlayView.swift; sourceTree = "<group>"; };
+		8B66C27D4E4BC19F30F4EB9C /* Pods_RateMyBrand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RateMyBrand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54C8B27767A6FF58C746FEF /* Pods-RateMyBrand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RateMyBrand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RateMyBrand/Pods-RateMyBrand.debug.xcconfig"; sourceTree = "<group>"; };
+		C4276B802EF334D284C448C9 /* Pods-RateMyBrand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RateMyBrand.release.xcconfig"; path = "Pods/Target Support Files/Pods-RateMyBrand/Pods-RateMyBrand.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C82BA502621DADBE0378C67 /* Pods_RateMyBrand.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +49,11 @@
 		1210E7BB1D9642A50053BFC2 = {
 			isa = PBXGroup;
 			children = (
+				1210E7DB1D96436E0053BFC2 /* Podfile */,
 				1210E7C61D9642A50053BFC2 /* RateMyBrand */,
 				1210E7C51D9642A50053BFC2 /* Products */,
+				F37FA694D1BED7BC256F3D76 /* Pods */,
+				28CDF90BE0B722BFCF203E29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +70,31 @@
 			children = (
 				1210E7C71D9642A50053BFC2 /* AppDelegate.swift */,
 				1210E7C91D9642A50053BFC2 /* ViewController.swift */,
+				1210E7E11D9715490053BFC2 /* ExampleOverlayView.swift */,
+				1210E7DF1D964CA60053BFC2 /* Images.xcassets */,
 				1210E7CB1D9642A50053BFC2 /* Main.storyboard */,
-				1210E7CE1D9642A50053BFC2 /* Assets.xcassets */,
 				1210E7D01D9642A50053BFC2 /* LaunchScreen.storyboard */,
 				1210E7D31D9642A50053BFC2 /* Info.plist */,
+				1210E7DD1D96484A0053BFC2 /* OverlayView.xib */,
 			);
 			path = RateMyBrand;
+			sourceTree = "<group>";
+		};
+		28CDF90BE0B722BFCF203E29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B66C27D4E4BC19F30F4EB9C /* Pods_RateMyBrand.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F37FA694D1BED7BC256F3D76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A54C8B27767A6FF58C746FEF /* Pods-RateMyBrand.debug.xcconfig */,
+				C4276B802EF334D284C448C9 /* Pods-RateMyBrand.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1210E7D61D9642A50053BFC2 /* Build configuration list for PBXNativeTarget "RateMyBrand" */;
 			buildPhases = (
+				567C65543BB1CD6F4829852C /* [CP] Check Pods Manifest.lock */,
 				1210E7C01D9642A50053BFC2 /* Sources */,
 				1210E7C11D9642A50053BFC2 /* Frameworks */,
 				1210E7C21D9642A50053BFC2 /* Resources */,
+				1ACB2D519544198829F9BE65 /* [CP] Embed Pods Frameworks */,
+				4A059FCF6DFA3EC714BDD03E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +159,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				1210E7D21D9642A50053BFC2 /* LaunchScreen.storyboard in Resources */,
-				1210E7CF1D9642A50053BFC2 /* Assets.xcassets in Resources */,
+				1210E7E01D964CA60053BFC2 /* Images.xcassets in Resources */,
+				1210E7DE1D96484A0053BFC2 /* OverlayView.xib in Resources */,
+				1210E7DC1D96436E0053BFC2 /* Podfile in Resources */,
 				1210E7CD1D9642A50053BFC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1ACB2D519544198829F9BE65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RateMyBrand/Pods-RateMyBrand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A059FCF6DFA3EC714BDD03E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RateMyBrand/Pods-RateMyBrand-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		567C65543BB1CD6F4829852C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1210E7C01D9642A50053BFC2 /* Sources */ = {
@@ -137,6 +223,7 @@
 			files = (
 				1210E7CA1D9642A50053BFC2 /* ViewController.swift in Sources */,
 				1210E7C81D9642A50053BFC2 /* AppDelegate.swift in Sources */,
+				1210E7E21D9715490053BFC2 /* ExampleOverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +334,7 @@
 		};
 		1210E7D71D9642A50053BFC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A54C8B27767A6FF58C746FEF /* Pods-RateMyBrand.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RateMyBrand/Info.plist;
@@ -258,6 +346,7 @@
 		};
 		1210E7D81D9642A50053BFC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4276B802EF334D284C448C9 /* Pods-RateMyBrand.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RateMyBrand/Info.plist;
@@ -286,6 +375,7 @@
 				1210E7D81D9642A50053BFC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

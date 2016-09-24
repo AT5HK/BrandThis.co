@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RateMyBrand" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,103 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gb-7C-zTs" userLabel="TabBarView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAb-AW-3WV">
+                                        <rect key="frame" x="15" y="33" width="19" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="0If-I5-A92"/>
+                                            <constraint firstAttribute="height" constant="22" id="Dln-DN-hUW"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_card_from_bg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daA-jf-ZY6">
+                                        <rect key="frame" x="564" y="33" width="21" height="22"/>
+                                        <state key="normal" image="btn_undo">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="undoButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="wdJ-NY-eax"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="daA-jf-ZY6" secondAttribute="trailing" constant="15" id="KRc-DB-3qg"/>
+                                    <constraint firstAttribute="height" constant="64" id="R8N-iG-Ka0"/>
+                                    <constraint firstItem="IAb-AW-3WV" firstAttribute="leading" secondItem="3gb-7C-zTs" secondAttribute="leading" constant="15" id="VKq-IX-thB"/>
+                                    <constraint firstItem="daA-jf-ZY6" firstAttribute="top" secondItem="3gb-7C-zTs" secondAttribute="top" constant="33" id="r4g-Fa-kWF"/>
+                                    <constraint firstItem="IAb-AW-3WV" firstAttribute="top" secondItem="3gb-7C-zTs" secondAttribute="top" constant="33" id="u4e-dK-WF2"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flr-hR-UVW">
+                                <rect key="frame" x="323" y="529" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="IZ9-FK-3wp"/>
+                                    <constraint firstAttribute="width" constant="32" id="i5R-4U-zFQ"/>
+                                </constraints>
+                                <state key="normal" image="btn_like_normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="btn_like_pressed"/>
+                                <connections>
+                                    <action selector="rightButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8y-FT-zyv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GF-vu-RWb">
+                                <rect key="frame" x="246" y="529" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="3M0-1l-kDU"/>
+                                    <constraint firstAttribute="width" constant="32" id="5nZ-zp-5Nk"/>
+                                </constraints>
+                                <state key="normal" image="btn_skip_normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="btn_skip_pressed"/>
+                                <connections>
+                                    <action selector="leftButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Yf-eM-rnB"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5l-kE-oCY" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="20" y="72" width="560" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w5l-kE-oCY" secondAttribute="height" multiplier="3:2" constant="-40" id="Nu8-ex-vFa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w5l-kE-oCY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6rU-np-OgX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w5l-kE-oCY" secondAttribute="trailing" id="8gd-Kx-yJo"/>
+                            <constraint firstItem="8GF-vu-RWb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-38" id="9VR-Pg-Ndi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3gb-7C-zTs" secondAttribute="trailing" constant="-20" id="CWI-uE-MR9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8GF-vu-RWb" secondAttribute="bottom" constant="39" id="GQq-if-dAc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="flr-hR-UVW" secondAttribute="bottom" constant="39" id="Idg-jW-yrK"/>
+                            <constraint firstItem="w5l-kE-oCY" firstAttribute="top" secondItem="3gb-7C-zTs" secondAttribute="bottom" constant="8" id="iYm-XT-nwr"/>
+                            <constraint firstItem="flr-hR-UVW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="39" id="lXV-qA-7S9"/>
+                            <constraint firstItem="3gb-7C-zTs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="uOS-ky-xUD"/>
+                            <constraint firstItem="3gb-7C-zTs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="vor-sJ-MXY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="w5l-kE-oCY" id="qni-KL-Khw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="313"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_like_normal" width="32" height="32"/>
+        <image name="btn_like_pressed" width="32" height="32"/>
+        <image name="btn_skip_normal" width="32" height="32"/>
+        <image name="btn_skip_pressed" width="32" height="32"/>
+        <image name="btn_undo" width="21" height="21"/>
+        <image name="ic_card_from_bg" width="21" height="21"/>
+    </resources>
 </document>
